@@ -1,0 +1,15 @@
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover{
+    color: green;
+}
+
+li{
+    font-size: 25px;
+}
