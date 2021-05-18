@@ -1,0 +1,29 @@
+p {
+    font-weight: 800;
+    line-height: 1.9;
+    font-size: 1em;
+}
+
+.var1 {
+    color: #f01a1a;
+}
+
+.var2 {
+    color: orange;
+}
+
+.var3 {
+    color: rgb(240, 240, 26);
+}
+
+.var4 {
+    color: hsl(129, 88%, 52%);
+}
+
+.var5 {
+    color: rgba(26, 218, 240, 1);
+}
+
+body {
+    background-image: url("https://web.kpi.kharkov.ua/asu/wp-content/uploads/sites/109/2019/02/nix_logo_500x500-1.jpg");
+}

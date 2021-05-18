@@ -1,0 +1,7 @@
+div {
+    margin: 100px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdTd_F8goICCblCjCTQtT4ZDy-AUduyLGo55_zz4oY2kol0LLuNfBiqPJMplxWluvLKRk&usqp=CAU");
+    width: 200px;
+    height: 200px;
+    box-shadow:  inset 15px -15px 7px 6px green, inset -15px 15px 7px 6px black, 40px 40px 17px 20px blue, -40px -40px 17px 20px red
+}

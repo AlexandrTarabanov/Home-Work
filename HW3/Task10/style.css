@@ -1,0 +1,9 @@
+div {
+    border: solid 1px black;
+    padding: 10px 20px;
+}
+
+p {
+    border: solid 1px black;
+    margin: 20px 10px;
+}

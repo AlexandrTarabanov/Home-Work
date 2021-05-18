@@ -1,0 +1,23 @@
+.var1 {
+    color: #3a1af0;
+}
+
+.var2 {
+    color: blue;
+}
+
+.var3 {
+    color: rgb(58, 26, 240);
+}
+
+.var4 {
+    color: hsl(249, 88%, 52%);
+}
+
+.opacity {
+    opacity: 0.4;
+}
+
+.rgba {
+    color: rgba(0, 0, 0, 0.4);
+}

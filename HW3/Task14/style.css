@@ -1,0 +1,47 @@
+table {
+    border-spacing: 0;
+}
+
+td {
+   width: 50px;
+    height: 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blue-radius {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.blue-radius-top {
+    background-color: blue;
+    border-radius: 50% 50% 0 0;
+}
+
+.blue-radius-bot {
+    background-color: blue;
+    border-radius: 0 0 50% 50%;
+}
+
+.red {
+    background-color: red;
+}
+
+.red-radius-left-top {
+    background-color: red;
+    border-radius: 50% 0 0 0;
+}
+
+.red-radius-left-bot {
+    background-color: red;
+    border-radius: 0 0 0 50%;
+}
+
+.red-radius-right {
+    background-color: red;
+    border-radius: 0 50% 50% 0;
+}
+

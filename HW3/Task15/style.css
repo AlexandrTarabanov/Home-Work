@@ -1,0 +1,8 @@
+div {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    background-image: url("https://web.kpi.kharkov.ua/asu/wp-content/uploads/sites/109/2019/02/nix_logo_500x500-1.jpg");
+    background-repeat: round;
+    background-size: 25%;
+}
