@@ -1,0 +1,33 @@
+
+
+.one {
+    float: left;
+    width: 30%;
+}
+
+.two-three {
+    float: left;
+    width: 70%;
+}
+.two {
+    float: right;
+    width: 30%;
+}
+.three {
+    float: right;
+    width: 70%;
+}
+
+.three-right {
+    float: right;
+    width: 30%;
+}
+.three-left {
+    width: 35%;
+    float: left;
+}
+
+
+
+
+

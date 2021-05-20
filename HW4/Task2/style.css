@@ -1,0 +1,24 @@
+.green {
+     background-color: green;
+    float: right;
+    width: 20%;
+
+}
+
+.green-left {
+    background-color: green;
+    width: 20%;
+    float: left;
+}
+
+.red {
+    background-color: red;
+    width: 80%;
+}
+
+.red-right {
+    background-color: red;
+    margin-left: 20%;
+    width: 80%;
+
+}

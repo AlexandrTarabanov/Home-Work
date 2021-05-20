@@ -1,0 +1,16 @@
+body{
+    width: 400px;
+}
+
+div {
+    border: 2px solid black;
+    display: inline;
+}
+
+.odd {
+    float: right;
+}
+
+.even {
+    float: left;
+}

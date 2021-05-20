@@ -1,0 +1,18 @@
+div {
+    height: 55px;
+}
+
+.three {
+    margin-left: 20%;
+}
+
+.two {
+    float: right;
+    width: 20%;
+    background-color: red;
+}
+.one {
+    float: left;
+    width: 20%;
+    background-color: red;
+}
