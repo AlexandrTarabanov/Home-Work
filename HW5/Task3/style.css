@@ -1,0 +1,69 @@
+
+body {
+    background-color: red;
+}
+
+div {
+    border: 2px solid black;
+    box-sizing: border-box;
+
+}
+
+@media (min-width: 768px) {
+    body {
+        background-color: yellow
+    }
+
+    div {
+        border: 2px solid black;
+        box-sizing: border-box;
+
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .flex-1 {
+        flex-basis: 100%;
+        order: 1;
+    }
+
+    .flex-5 {
+        flex-basis: 100%;
+        order: 5;
+    }
+
+    .flex-2 {
+        flex-basis: 25%;
+        order: 2;
+    }
+
+    .flex-3 {
+        flex-basis: 25%;
+        order: 4;
+    }
+
+    .flex-4 {
+        flex-basis: 50%;
+        order: 3;
+    }
+
+
+}
+
+
+@media (min-width: 992px) {
+    body {
+        background-color: green
+    }
+
+    .flex-4 {
+        flex-basis: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
