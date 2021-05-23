@@ -13,7 +13,7 @@ div {
 
 }
 .item {
-    width: 900px;
+    flex-basis: 45%;
     height: 20px;
 
 }
