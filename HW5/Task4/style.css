@@ -8,9 +8,8 @@ div {
     height: 400px;
     display: flex;
     flex-wrap: wrap-reverse;
-
-
-
+    align-content: space-around;
+    justify-content: space-between;
 }
 .item {
     flex-basis: 45%;
