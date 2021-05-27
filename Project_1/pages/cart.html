@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/cart.css">
+</head>
+<body>
+
+<nav id="main">
+    <div class="logo"><a href="">Logo</a></div>
+    <div class="nav-items">
+        <div class="nav-item">
+            <a href="../index.html">Main</a>
+        </div>
+        <div class="nav-item">
+            <a href="../index.html">Products</a>
+        </div>
+        <div class="nav-item">
+            <a href="#contacts">Contacts</a>
+        </div>
+        <div class="nav-item">
+            <a class="cart-icon" href="">Cart</a>
+        </div>
+    </div>
+    <div class="search">
+        <input type="search" placeholder="Search Your Way">
+    </div>
+</nav>
+
+<h1>Cart</h1>
+
+<div class="cart">
+    <div class="card" style="width: 18rem;">
+        <a class="delete" href="">&#10006;</a>
+        <img src="https://s3.amazonaws.com/media.izbirkom.org.ua/cache/ba/4b/ba4b82afc620125b0b125c96507efa70.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Название карточки</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+        </div>
+        <hr>
+        <div class="quantity">
+            <div class="quantity-item">
+                <button>-</button>
+            </div>
+            <p class="quantity-item">1</p>
+            <div class="quantity-item">
+                <button>+</button>
+            </div>
+        </div>
+    </div>
+
+    <h3>Total Price: 999$</h3>
+</div>
+
+<div class="checkout">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Checkout
+    </button>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                               placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState">State</label>
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Kharkiv</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="contacts" id="contacts">
+        <h3>Contacts:</h3>
+        <p> Instagram: @ChooseYourWay</p>
+        <p>Phone: +38099 099 00 99</p>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

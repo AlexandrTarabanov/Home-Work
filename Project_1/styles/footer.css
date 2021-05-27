@@ -1,0 +1,23 @@
+.footer {
+    margin-top: 2%;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+
+}
+
+.contacts {
+    padding-top: 1%;
+}
+
+.contacts p, .contacts h3 {
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 320px) {
+    .footer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,60 @@
+@import "nav.css";
+@import "footer.css";
+
+.cart {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    border: 1px solid black;
+}
+
+.quantity {
+    margin: 0 auto;
+}
+
+.quantity-item {
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.quantity button {
+    background-color: white;
+    border: 0;
+}
+
+h1 {
+    margin-top: 2%;
+    text-align: center;
+}
+
+h3 {
+    text-align: right;
+}
+
+.delete {
+    text-align: right;
+}
+
+.btn {
+    background-color: black;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.checkout {
+    padding-top: 2%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+
+.input {
+    outline: 0;
+}
