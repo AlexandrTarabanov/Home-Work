@@ -1,0 +1,18 @@
+.cards {
+    width: 100%;
+}
+.card-1,.card-2 {
+    display: inline-block;
+}
+
+.card-1 .card-header {
+    background-color: dodgerblue;
+}
+
+.card-2 .card-header {
+    background-color: forestgreen;
+}
+
+.card-2 .btn {
+    background-color: forestgreen;
+}
