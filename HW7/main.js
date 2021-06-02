@@ -212,7 +212,7 @@ let task29 = () => {
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] > 0) {
             pos++
-        } else if(arr[i] < 0) {
+        } else if (arr[i] < 0) {
             neg++
         }
     }
@@ -222,9 +222,9 @@ let task29 = () => {
 let task30 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
-    if(first > second) {
+    if (first > second) {
         alert(first)
-    } else if(first < second) {
+    } else if (first < second) {
         alert(second)
     } else alert('Равны')
 }
@@ -232,9 +232,9 @@ let task30 = () => {
 let task31 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
-    if(first > second) {
+    if (first > second) {
         alert(2)
-    } else if(first < second) {
+    } else if (first < second) {
         alert(1)
     } else alert('Равны')
 }
@@ -242,10 +242,10 @@ let task31 = () => {
 let task32 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
-    if(first > second) {
+    if (first > second) {
         alert(first)
         alert(second)
-    } else if(first < second) {
+    } else if (first < second) {
         alert(second)
         alert(first)
     } else alert('Равны')
@@ -256,11 +256,11 @@ let task33 = () => {
     let B = +prompt('Enter B')
     let a = A
     let b = B
-    if(A > B) {
+    if (A > B) {
         B = a
         A = b
         alert(`A: ${A}, B: ${B}`)
-    } else if(A < B) {
+    } else if (A < B) {
         alert(`A: ${A}, B: ${B}`)
     } else alert('Равны')
 }
@@ -268,12 +268,11 @@ let task33 = () => {
 let task34 = () => {
     let A = +prompt('Enter A')
     let B = +prompt('Enter B')
-    if(A === B) {
+    if (A === B) {
         A = B = 0
         alert(`A: ${A}, B: ${B}`)
-    } else
-    {
-        A = B = A+B
+    } else {
+        A = B = A + B
         alert(`A: ${A}, B: ${B}`)
     }
 }
@@ -281,10 +280,10 @@ let task34 = () => {
 let task35 = () => {
     let A = +prompt('Enter A')
     let B = +prompt('Enter B')
-    if(A === B) {
+    if (A === B) {
         A = B = 0
         alert(`A: ${A}, B: ${B}`)
-    } else if(A > B) {
+    } else if (A > B) {
         A = B = A
         alert(`A: ${A}, B: ${B}`)
     } else {
@@ -297,29 +296,29 @@ let task36 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
     let third = +prompt('Enter third')
-    alert(Math.min(first,second,third))
+    alert(Math.min(first, second, third))
 }
 
 let task37 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
     let third = +prompt('Enter third')
-    alert(first + second + third - Math.min(first,second,third) - Math.max(first,second,third))
+    alert(first + second + third - Math.min(first, second, third) - Math.max(first, second, third))
 }
 
 let task38 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
     let third = +prompt('Enter third')
-    alert(Math.min(first,second,third))
-    alert(Math.max(first,second,third))
+    alert(Math.min(first, second, third))
+    alert(Math.max(first, second, third))
 }
 
 let task39 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
     let third = +prompt('Enter third')
-    alert(Math.max(first,second,third) + (first + second + third - Math.min(first,second,third) - Math.max(first,second,third)))
+    alert(Math.max(first, second, third) + (first + second + third - Math.min(first, second, third) - Math.max(first, second, third)))
 
 }
 
@@ -327,9 +326,9 @@ let task40 = () => {
     let first = +prompt('Enter first')
     let second = +prompt('Enter second')
     let third = +prompt('Enter third')
-    if(first === second) {
+    if (first === second) {
         alert(3)
-    } else if(first === third) {
+    } else if (first === third) {
         alert(2)
     } else alert(1)
 }
