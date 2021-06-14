@@ -1,0 +1,38 @@
+.main {
+    width: 40%;
+    height: 200px;
+    padding-top: 3%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+.input-field {
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.generate-btn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.generate-btn:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+}
+
+.result {
+    margin-top: 5%;
+    color: red;
+    font-size: 30px;
+}
