@@ -140,7 +140,7 @@ let question15 = {
 }
 
 
-let questions = [question1, question2, question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15]
+let questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question12, question13, question14, question15]
 
 let question = document.querySelector('.question')
 let answerA = document.querySelector('.answerA')
@@ -151,12 +151,15 @@ let answerD = document.querySelector('.answerD')
 let score = document.querySelector('.score')
 let helpFifty = document.querySelector('.fifty')
 
+let scoreCounter = 0
 function questionRender(i) {
     question.innerHTML = 'Question: ' + questions[i].ques
     answerA.innerHTML = 'A: ' + questions[i].A
     answerB.innerHTML = 'B: ' + questions[i].B
     answerC.innerHTML = 'C: ' + questions[i].C
     answerD.innerHTML = 'D: ' + questions[i].D
+
+
 
 }
 
@@ -165,13 +168,20 @@ document.querySelectorAll('.answer').forEach((button) => {
 })
 
 function onButtonClick(e) {
-    let scoreCounter = 0
-    for (let i = 0; i<questions.length; i++) {
-        if (e.target.innerHTML.indexOf(questions[i].right) > -1) {
-            scoreCounter += 100
-            score.innerHTML = scoreCounter
-            questionRender(i+1)
-        }
+    if (e.target.innerHTML.indexOf(questions[0].right) > -1) {
+        scoreCounter += 100
+        score.innerHTML = scoreCounter
+        questions.shift(0)
+        return questionRender(0)
+    } else if (e.target.innerHTML.indexOf(questions[0].right) === -1) {
+        location.reload()
+        alert('Неправильный ответ, попробуй сначала')
     }
 }
+
 questionRender(0)
+
+
+
+
+
