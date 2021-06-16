@@ -2,6 +2,7 @@ body {
     background-image: url("https://klike.net/uploads/posts/2019-09/1568880410_2.jpg");
     background-size: cover;
 }
+
 .mill-wrap {
     color: white;
     width: 600px;
@@ -28,7 +29,7 @@ body {
     display: inline-block;
 }
 
-.answer:hover{
+.answer:hover {
     border-color: blueviolet;
     background: blueviolet;
 }

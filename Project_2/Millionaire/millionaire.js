@@ -1,6 +1,7 @@
 /*
 Нечайно удалил файлы по миллионеру, когда пушил калькулятор и рандом, думал что удалю из гита, а удалил с компа.
-Пришлость заново делать, буду еще доделывать логику подсказок и путь по лестнице заработанных тугриков
+Пришлость заново делать, осталось чтобы по лесенке зароботка был подъем после правильного ответа и сделать подсказки
+чтобы они могли коректо работать вместе, а так игра рабочая
 */
 
 
@@ -149,19 +150,56 @@ let answerC = document.querySelector('.answerC')
 let answerD = document.querySelector('.answerD')
 
 let score = document.querySelector('.score')
+let helpFriend = document.querySelector('.friend')
 let helpFifty = document.querySelector('.fifty')
 
 let scoreCounter = 0
+
 function questionRender(i) {
     question.innerHTML = 'Question: ' + questions[i].ques
     answerA.innerHTML = 'A: ' + questions[i].A
     answerB.innerHTML = 'B: ' + questions[i].B
     answerC.innerHTML = 'C: ' + questions[i].C
     answerD.innerHTML = 'D: ' + questions[i].D
-
-
-
 }
+
+helpFifty.addEventListener('click', () => {
+    if (answerA.innerHTML.indexOf(questions[0].right) > -1) {
+        answerC.innerHTML = 'C: '
+        answerD.innerHTML = 'D: '
+    } else if (answerB.innerHTML.indexOf(questions[0].right) > -1) {
+        answerA.innerHTML = 'A: '
+        answerD.innerHTML = 'D: '
+    } else if (answerC.innerHTML.indexOf(questions[0].right) > -1) {
+        answerA.innerHTML = 'A: '
+        answerD.innerHTML = 'D: '
+    } else if (answerC.innerHTML.indexOf(questions[0].right) > -1) {
+        answerA.innerHTML = 'A: '
+        answerB.innerHTML = 'B: '
+    }
+    helpFifty.style.display = 'none'
+})
+helpFriend.addEventListener('click', () => {
+    let random1 = (1 + Math.random() * (4 - 1)).toFixed()
+    if (random1 == 1) {
+        answerB.innerHTML = 'B: '
+        answerC.innerHTML = 'C: '
+        answerD.innerHTML = 'D: '
+    } else if (random1 == 2) {
+        answerA.innerHTML = 'A: '
+        answerC.innerHTML = 'C: '
+        answerD.innerHTML = 'D: '
+    } else if (random1 == 3) {
+        answerA.innerHTML = 'A: '
+        answerB.innerHTML = 'B: '
+        answerD.innerHTML = 'D: '
+    } else if (random1 == 4) {
+        answerA.innerHTML = 'A: '
+        answerB.innerHTML = 'B: '
+        answerC.innerHTML = 'C: '
+    }
+    helpFriend.style.display = 'none'
+})
 
 document.querySelectorAll('.answer').forEach((button) => {
     button.addEventListener('click', onButtonClick)
@@ -172,7 +210,10 @@ function onButtonClick(e) {
         scoreCounter += 100
         score.innerHTML = scoreCounter
         questions.shift(0)
-        return questionRender(0)
+        if (questions.length === 0) {
+            alert('Поздравляем ты выиграл МИЛЛИОН')
+            location.reload()
+        } else return questionRender(0)
     } else if (e.target.innerHTML.indexOf(questions[0].right) === -1) {
         location.reload()
         alert('Неправильный ответ, попробуй сначала')
@@ -180,8 +221,3 @@ function onButtonClick(e) {
 }
 
 questionRender(0)
-
-
-
-
-
