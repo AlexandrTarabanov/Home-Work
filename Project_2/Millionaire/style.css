@@ -1,0 +1,57 @@
+body {
+    background-image: url("https://klike.net/uploads/posts/2019-09/1568880410_2.jpg");
+    background-size: cover;
+}
+.mill-wrap {
+    color: white;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.question-container {
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.answers {
+    margin-top: 30px;
+}
+
+.answer {
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.answer:hover{
+    border-color: blueviolet;
+    background: blueviolet;
+}
+
+.help-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid blueviolet;
+    border-radius: 50%;
+    background-color: blueviolet;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.help-btn:hover {
+    background-color: white;
+
+}
+
+.way {
+    color: white;
+    border: 1px solid white;
+    width: 110px;
+    margin: 0 auto;
+
+}
